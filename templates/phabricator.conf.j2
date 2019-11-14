@@ -2,7 +2,7 @@ server {
   server_name {{ server_url }};
   root        {{ web_root }}/phabricator/webroot;
 
-  client_max_body_size 32M;
+  client_max_body_size {{ max_post_size }};
 
   location / {
     index index.php;
